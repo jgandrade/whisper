@@ -1,0 +1,18 @@
+{
+  "name": "whisper-be",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn workspace chat start && yarn workspace meet start && yarn workspace user-management start && yarn workspace notifications start",
+    "start:chat-dev": "yarn workspace chat start:dev",
+    "start:meet-dev": "yarn workspace meet start:dev",
+    "start:user-management-dev": "yarn workspace user-management start:dev",
+    "start:notifications-dev": "yarn workspace notifications start:dev"
+  },
+  "devDependencies": {
+    "syncpack": "^13.0.0"
+  }
+}
